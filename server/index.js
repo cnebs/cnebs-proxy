@@ -1,9 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const compression = require("compression");
 
 const app = express();
 
 //Parse json and x-ww-form-urlencoded
+app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
