@@ -5,13 +5,22 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 ReactDOM.render( 
-  <>
+  <Container>
       <div id="navpane"></div>
 
+      <div className="proxyCarouselHeader" />
+     
       <Row>
 
         <Col sm={8} md={8}>
+        <Container>
           <div id="carousel-container"></div>
+        </Container>
+
+          <p />
+          <hr className="proxyCarouselFooter"/>
+          <p />
+
           <div id="reviews"></div>
         </Col>
 
@@ -21,5 +30,5 @@ ReactDOM.render(
 
       </Row>
 
-    </>
+    </Container>
   , document.getElementById('regrEtsy'));
